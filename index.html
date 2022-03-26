@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Countdown timer</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <h1>>Old Project< >Timer<</h1>
+
+    <div class="countdown-container">
+      <div class="countdown-el days-c">
+        <p class="big-text" id="days">0</p>
+        <span>days</span>
+      </div>
+      <div class="countdown-el hours-c">
+        <p class="big-text" id="hours">0</p>
+        <span>hours</span>
+      </div>
+      <div class="countdown-el minutes-c">
+        <p class="big-text" id="mins">0</p>
+        <span>minutes</span>
+      </div>
+      <div class="countdown-el seconds-c">
+        <p class="big-text" id="seconds">0</p>
+        <span>seconds</span>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <h2 tabindex="1" id="Ai" onkeydown="return event.keyCode != 13 || pressButton()" onclick="otherDates('5 Sep 2022')">First Period</h2>
+      <h2 tabindex="2" id="Ma" onkeydown="return event.keyCode != 13 || pressButton()" onclick="otherDates('24 Oct 2022')">Second Period</h2>
+      <h2 tabindex="3" id="Fy" onkeydown="return event.keyCode != 13 || pressButton()" onclick="otherDates('1 Jan 2023')">New Years 2023</h2>
+    </div>
+    <script src="script.js"></script>
+
+  </body>
+</html>
